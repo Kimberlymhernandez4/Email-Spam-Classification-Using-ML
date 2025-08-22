@@ -6,4 +6,11 @@ Access the dataset from UCI'S Machine Learning Repository: https://archive.ics.u
 
 ---------------------------------------------------------------------------------------
 
+# Problem Domain
+Email spam detection is one of the most important features for mailbox websites such as Gmail, Outlook, and Yahoo Mail. These platforms serve a large number of users globally, and unwanted emails can raise serious risks (i.e., phishing attacks, fraud, and malware spread), where safe communication can become compromised. Machine learning can offer a reliable solution to this problem domain as it can learn directly from historical data and identify patterns that can distinguish whether an email can (or cannot) be labeled as spam. This supervised learning approach would include using logistic regression, as it is designed for binary classification modeling (1 = True, 0 = False), where true (1) values would confirm spam, and false (0) values would detect that an email is not spam. Furthermore, using numerical features that include the frequency of words, characters, and capital letter usage can be applied to a logistic regression model to estimate the probability that a message belongs to the spam category. 
+
+---------------------------------------------------------------------------------------
+
+
+
 
