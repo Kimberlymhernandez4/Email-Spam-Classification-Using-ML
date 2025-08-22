@@ -11,6 +11,9 @@ Email spam detection is one of the most important features for mailbox websites 
 
 ---------------------------------------------------------------------------------------
 
+# Objective
+- The main objective for this analysis is to apply logistic regression in order to classify emails as spam or non-spam using the Spambase dataset from the UCI Machine Learning Repository (University of California, Irvine, 1999). 
 
+- The main research question is: “Can Logistic Regression predict the likelihood that an email is spam based on text-related features with great accuracy?”
 
 
