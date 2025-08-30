@@ -34,21 +34,21 @@ The dataset used for this model is the Spambase dataset, which was collected by 
 The three boxplots above provide data visualizations of how selected features are distributed across the binary classification: Spam (1) and Non-Spam (0). 
 
 ## **1st Boxplot: Word Frequency**
-Displays the distribution of the variable ‘word_freq_1” by each binary class. Most values for both spam and non-spam emails are below two and are concentrated near zero. More outliers can be seen in the non-spam distribution, with some present in the spam classification. 
+- Displays the distribution of the variable ‘word_freq_1” by each binary class. Most values for both spam and non-spam emails are below two and are concentrated near zero. More outliers can be seen in the non-spam distribution, with some present in the spam classification. 
 ---------------------------------------------------------------------------------------
 
 ## **2nd Boxplot: Character Frequency:**
-Displays the distribution of the variable ‘char_freq_1’ against each binary class. Similar to the 1st boxplot, most values are closer to zero, and a cluster of outliers can be seen in the non-spam category. This confirms that specific characters are more often used in spam emails and are more commonly found in low-frequency sequences. 
+- Displays the distribution of the variable ‘char_freq_1’ against each binary class. Similar to the 1st boxplot, most values are closer to zero, and a cluster of outliers can be seen in the non-spam category. This confirms that specific characters are more often used in spam emails and are more commonly found in low-frequency sequences. 
 
 ---------------------------------------------------------------------------------------
 
 ## **3rd Boxplot: Capitalization:**
-Provides the distribution of  “capital_run_length_average” against each binary class, which measures the average length of consecutive capital letters in an email. The results show that spam emails contain much higher average runs of capital letters compared to non-spam emails. This finding is consistent with the common observation that spam messages often use excessive capitalization for emphasis, which can be seen in the wide range and extreme outliers within the spam class. 
+- Provides the distribution of  “capital_run_length_average” against each binary class, which measures the average length of consecutive capital letters in an email. The results show that spam emails contain much higher average runs of capital letters compared to non-spam emails. This finding is consistent with the common observation that spam messages often use excessive capitalization for emphasis, which can be seen in the wide range and extreme outliers within the spam class. 
 
 ---------------------------------------------------------------------------------------
 
 ## **Key Insights Summary from Boxplots:**
-Overall, these visualizations reveal that while most feature values are concentrated near zero, spam emails are more likely to contain higher word frequencies, unusual character usage, and excessive capitalization. These patterns suggest that logistic regression can assess the performance of these specific features to separate spam from non-spam messages effectively.
+- Overall, these visualizations reveal that while most feature values are concentrated near zero, spam emails are more likely to contain higher word frequencies, unusual character usage, and excessive capitalization. These patterns suggest that logistic regression can assess the performance of these specific features to separate spam from non-spam messages effectively.
 
 ---------------------------------------------------------------------------------------
 
