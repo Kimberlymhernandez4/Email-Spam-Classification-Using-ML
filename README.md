@@ -52,10 +52,30 @@ The three boxplots above provide data visualizations of how selected features ar
 
 ---------------------------------------------------------------------------------------
 
-
-
+# Preprocessing
+The dataset was split into two variables: the target label named ‘class’ (y) and all other columns noted as features (X). Furthermore, the two variables were placed into training and testing sets using the ‘train_test_split’ function (80% train, 20% test) and ‘random_state’ equal to a fixed integer (42). Since many of the features in the dataset are frequency counts and capitalization measures, feature scaling was integrated using the ‘StandardScaler’ function from Scikit-Learn. This step is key, as standardization ensures that each feature is applied evenly to the model by transforming them into distributions with unit variance and a mean of zero. Performing this preprocessing step before model fitting for logistic regression helps to reduce the likelihood of poor performance that can often result in overfitting. 
 
 
 ---------------------------------------------------------------------------------------
+# Model Fitting
+
+Using the Scikit-Learn Logistic Regression function, the model was fitted using the trained scaled features (X) and the trained target label (y). Initial training was performed using default hyperparameters, which already provided strong performance. Logistic Regression was chosen for its interpretability for predicting whether an email can be labeled as spam using binary classification. Additionally, future model iterations can use ‘GridSearchCV’ from Scikit-Learn for optimization, which is often used for cross-validation to determine which hyperparameters can provide the best performance. 
+
+---------------------------------------------------------------------------------------
+
+# Model Properties
+The fitted Logistic Regression model produced coefficients for each feature, which highlight the importance of word frequencies, character frequencies, and capitalization patterns in predicting spam. Positive coefficients show that higher feature values can increase the probability of an email being labeled as spam, while negative coefficients decrease this likelihood. For example, features such as frequent use of exclamation marks (‘char_freq_1’) and/or longer sequences of capital letters (‘capital_run_length_average’) tend to hold stronger positive associations with spam classification. 
+
+---------------------------------------------------------------------------------------
+
+# Output Interpretation
+
+The model was evaluated on the test set, and the predictions were compared against the actual labels. The classification report and confusion matrix show that the logistic regression model was able to separate spam from non-spam with high accuracy. The confusion matrix revealed that the model correctly classified the majority of both spam and non-spam emails, with relatively few false positives and false negatives. These results meet the stated objective, and the model successfully achieved the goal of predicting whether an email is spam based on text-related features.
+
+---------------------------------------------------------------------------------------
+
+# Evaluation
+The model achieved an accuracy of 92% (rounded to two decimal places), highlighting a reliable, strong prediction for classifying spam emails. I evaluated my model using a classification report and confusion matrix, which includes values such as precision, recall, f1-score, and support count, shown in the output below:
+
 
 
