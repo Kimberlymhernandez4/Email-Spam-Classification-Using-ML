@@ -77,5 +77,32 @@ The model was evaluated on the test set, and the predictions were compared again
 # Evaluation
 The model achieved an accuracy of 92% (rounded to two decimal places), highlighting a reliable, strong prediction for classifying spam emails. I evaluated my model using a classification report and confusion matrix, which includes values such as precision, recall, f1-score, and support count, shown in the output below:
 
+<img width="692" height="410" alt="image" src="https://github.com/user-attachments/assets/c6b1c5fc-cb86-4ab1-934e-e66ba3a59940" />
+
+Results for each binary classification are noted in the classification report, along with macro and weighted averages. The F1-score’s accuracy was 0.92 and held minor variance between non-spam (0) and spam (1) values. Recall had a large difference in results, with non-spam at 95% (0) and spam at 87%. Precision held similar values to the F1-score, showing high stability within the Logistic Regression model’s accuracy of 92%. The support count highlights the frequency of spam and non-spam events in the algorithm, and its high value of 921 shows that the model can effectively identify patterns within the data. 
+
+---------------------------------------------------------------------------------------
+
+## **Confusion Matrix Heatmap and Results**
+The Confusion Matrix heatmap below highlights the effectiveness of the Logistic Regression model’s performance on the Spambase dataset. The Confusion Matrix included the following results: 506 true negatives (non-spam emails), 341 true positives (spam emails), 25 false positives (non-spam emails were misclassified as spam), and 49 false negatives (spam emails were misclassified as non-spam). This information shows that the model had an overall strong performance with minor errors and a high level of accuracy. The relatively low number of false positives is important as misclassifying non-spam emails as spam can disrupt communication. 
+
+<img width="641" height="489" alt="image" src="https://github.com/user-attachments/assets/dff1a8a9-0035-4363-84c4-19524c895b2a" />
+
+
+---------------------------------------------------------------------------------------
+
+
+## **ROC Curve Visualization (Additional Section)**
+The ROC curve below further visualizes the trade-off between the true positive rate (sensitivity) and the false positive rate, holding an AUC score of 0.971 with the Logistic Regression model. The AUC score is close to 1.0, highlighting that the model is very effective at identifying whether an email is spam or non-spam. This visualization adds to the previous confusion matrix heatmap by showing that the model is well-equipped across a range of evaluation metrics. 
+
+<img width="538" height="472" alt="image" src="https://github.com/user-attachments/assets/d2d1ad9e-cb0d-4130-b58e-bae12ee3a9ba" />
+
+
+---------------------------------------------------------------------------------------
+
+
+
+
+
 
 
