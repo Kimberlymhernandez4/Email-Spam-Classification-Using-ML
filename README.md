@@ -100,8 +100,31 @@ The ROC curve below further visualizes the trade-off between the true positive r
 
 ---------------------------------------------------------------------------------------
 
+# Conclusion
+
+---------------------------------------------------------------------------------------
+
+# Summary
+This project showed that Logistic Regression is an effective supervised learning model in Machine Learning for classifying emails as spam or non-spam using UC Irvine’s Spambase dataset. The analysis highlighted that features such as word frequencies, character usage, and capitalization patterns can strongly influence the likelihood of an email being spam. The model was able to meet the stated objectives by achieving a high accuracy score of 92% and low misclassification results in the confusion matrix. The ROC curve visualization takes this a step further, holding a stable AUC score of 0.971. Overall, these key findings and results confirm that Logistic Regression can be used as a reliable algorithm for email spam detection on online communication platforms. 
 
 
+---------------------------------------------------------------------------------------
+
+# Limitations and Improvement Areas
+While the Logistic Regression model did have strong performance results, it is limited by its fundamental theory of linear relationships between features (X) and the predictive label (y). This may not fully capture complex patterns in larger quantities of data and can become too complex for the model, which could result in overfitting due to poor generalization. One way to improve this could include the usage of ‘GridSearchCV’ to optimize hyperparameters and further enhance the model’s overall performance. Additionally, for the most accurate and best results, more recent user data within the last 5 to 7 years should be used. UC Irvine’s dataset was collected in 1999, which can be outdated and misrepresent current user data results. 
+
+---------------------------------------------------------------------------------------
+
+## **References**
+
+Geeks for Geeks. (2025-a). ‘Advantages and Disadvantages of Logistic Regression.’ https://www.geeksforgeeks.org/data-science/advantages-and-disadvantages-of-logistic-regression/
+
+Geeks for Geeks. (2025-b). ‘How to Optimize Logistic Regression Performance.’ https://www.geeksforgeeks.org/machine-learning/how-to-optimize-logistic-regression-performance/
+
+University of California, Irvine. (1999). UC Irvine Machine Learning Repository. Spambase. ‘Classifying Email as Spam or Non-Spam.’ https://archive.ics.uci.edu/dataset/94/spambase. 
+
+
+---------------------------------------------------------------------------------------
 
 
 
